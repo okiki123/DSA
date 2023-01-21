@@ -1,1 +1,3 @@
-var twosum
+var twoSum = function(nums, target) {
+    
+};
