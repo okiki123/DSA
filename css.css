@@ -30,7 +30,7 @@ div {
     transform: translate(-50%, -50%);
  }
 
- /* difference between static, relative, absolut and fixed position */
+ /* difference between static, relative, absolute and fixed position */
 
  div {
     width: 160px;
@@ -38,4 +38,8 @@ div {
     padding: 20px;
     border: 8px solid green;
     background: yellow;
+ }
+
+ .two {
+    position: relative;
  }
