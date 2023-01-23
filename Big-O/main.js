@@ -19,3 +19,15 @@ function logFirstTwoBoxes(boxes) {
     console.log(boxes[0]);
     console.log(boxes[1]);
 }
+
+
+// Big-O rule
+function comopressBoxesTwice(boxes, boxes2) {
+    boxes.forEach(function(boxes) {
+        console.log(boxes);
+    })
+
+    boxes2.forEach(function(boxes) {
+        console.log(boxes);
+    })
+}
