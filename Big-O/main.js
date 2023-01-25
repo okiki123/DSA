@@ -42,4 +42,5 @@ function logAllPairs(array) {
     }
 }
 
-logAllPairs(box)
+logAllPairs(box);
+
