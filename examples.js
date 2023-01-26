@@ -33,3 +33,15 @@ function containsCommonItems2(arr1, arr2) {
 }
 
 console.log(containsCommonItems2(array1, array2));
+
+// Arrays .................
+const strings = ['a', 'b', 'c', 'd'];
+
+//push
+strings.push('e') // O(n)
+
+//pop
+strings.pop() //O(1)
+
+//unshift
+strings.unshift('x'); // 0(n)
