@@ -45,3 +45,26 @@ strings.pop() //O(1)
 
 //unshift
 strings.unshift('x'); // 0(n)
+
+//Classes in Javascript
+class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+    introduce() {
+        console.log(`Hi i am ${this.name}, i am a ${this.type}`)
+    }
+}
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+    }
+    play() {
+        console.log(`I am a ${this.type}`)
+    }
+}
+
+const wizard1 = new Wizard('Shally', 'Healer');
+const wizard2 = new Wizard('Shawn', 'Dark Magic');
