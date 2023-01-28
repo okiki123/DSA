@@ -104,3 +104,15 @@ class myArray {
 const newArray = new myArray;
 newArray.push('1');
 console.log(newArray);
+
+//Create a function that Reverse a string
+
+function reverse(str) {
+    //check input
+    if(!str || str.length < 2 || typeof str !== 'string') {
+        return 'Not reversible'
+    }
+    const backwards = []
+    return backwards.join();
+
+}
