@@ -117,13 +117,5 @@ function reverse(str) {
 
 }
 
-function reverse(str) {
-    //check input
-    if(!str || str.length < 2 || typeof str !== 'string') {
-        return 'Not reversible'
-    }
-    const backwards = []
-    return backwards.join();
 
-}
 
