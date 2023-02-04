@@ -1,4 +1,5 @@
 var twoSum = function(nums, target) {
+    const map = {};
      for (let i = 0; i < nums.length; i++) {
          const compliment = target - nums[i];
          if (compliment in map) {
