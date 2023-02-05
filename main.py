@@ -6,10 +6,10 @@
 
 def locate_number(card, query):
     position = 0
-    while True:
+    while position < len(card):
         if card[position] == query:
             return position
         position += 1
-        if len(card) == position:
-            return -1
+    return -1
+
 
