@@ -13,6 +13,17 @@ def locate_position(cards, query):
     return -1
 
 # Using Binary Search Algorithm
-
-
+def locate_position(cards, query):
+    lo = 0
+    hi = len(cards) - 1
+    while lo <= hi:
+        mid = (lo + hi) / 2
+        mid_number = cards[mid]
+        if mid_number == query:
+            return mid
+        elif mid_number < query:
+            hi = mid - 1
+        elif mid_number > query:
+            lo = mid + 1
+    return -1
 
