@@ -27,3 +27,6 @@ def locate_position(cards, query):
             lo = mid + 1
     return -1
 
+# List/Arrays in Python
+
+
