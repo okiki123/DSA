@@ -28,5 +28,22 @@ def locate_position(cards, query):
     return -1
 
 # List/Arrays in Python
+stock_prices = [298, 305, 320, 301, 292]
 
+#Lookup by index = o(1)
 
+def check_number(stock_prices):
+    for i in range(len(stock_prices)):
+        if stock_prices[i] == 301:
+            return i
+
+#Lookup by value = o(n)
+
+max = int(input('Enter your number'))
+
+odd_number = []
+
+for i in range(1, max):
+    if i % 2 == 1:
+        odd_number.append(i)
+        
