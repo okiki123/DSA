@@ -66,4 +66,12 @@ class LinkedList:
             print("Linked list is empty")
             return
 
+class hash:
+    def __init__(self, size):
+        self.data = [None] * (size)
 
+    def _hash(self, key):
+        hash = 0
+        for i in range(len(key)):
+            hash = (hash + ord(key[i]) * i) % len(self.data)
+        return hash

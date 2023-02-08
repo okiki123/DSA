@@ -117,7 +117,15 @@ function reverse(str) {
 
 }
 
-
+// Hash Table
+let user = {
+    age: 54,
+    name: 'okiki',
+    magic: true,
+    scream: function() {
+        console.log('Haaaaaaa!')
+    }
+}
 
 
 
