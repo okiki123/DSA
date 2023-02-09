@@ -178,21 +178,23 @@ class HashTable:
                 del self.arr[arr_index][index]
 
 # Stack
+from collections import deque
+stack = deque()
 class stack:
     def __init__(self):
         self.container = deque()
-
-    def push(self, val):
-        self.container.append(val)
     
+    def push(self,val):
+        self.container.append(val)
+        
     def pop(self):
         return self.container.pop()
-
+    
     def peek(self):
-        return self.container[-1]
-
+        return  self.container[-1]
+    
     def is_empty(self):
-        return len(self.container) == 0
+        return len(self.container)==0
     
     def size(self):
         return len(self.container)
