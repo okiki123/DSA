@@ -235,10 +235,6 @@ def find_sum(n):
         sum+=1
     return sum
 
-def find_sum_recursive(n):
-    if n == 1:
-        return 1
-    return n + find_sum_recursive(n - 1)
 
 
 
