@@ -270,7 +270,53 @@ class LinkedList:
         current_node.next = node
 
 
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next  = None
 
+class LinkedList:
+    def __init__(self):
+        self.head = None
+        self.last_Node = None
 
+    def append(self, data):
+        if self.last_Node is None:
+            self.head = Node(data)
+            self.last_Node = self.head
+        else:
+            self.last_Node.next = Node(data)
+            self.last_Node = self.last_Node.next
+    
+    def display(self):
+        current = self.head
+        while current is not None:
+            print(current.data, end='')
+            current = current.next
+        print()
 
+    def push(self, data):
+        new_node = Node(data)
 
+        new_node.next = self.head
+
+        self.head = new_node
+
+    def insertAfter(self, prev_node, new_data):
+        if prev_node is None:
+            print('The given node does not exist')
+            return
+        new_node = Node(new_data)
+        new_node.next = prev_node.next
+        prev_node.next = new_node
+
+    def search(self, x):
+        current = self.head
+
+        while current != None:
+            if current.data == x:
+                return True
+            current = current.next
+        return False
+        
+        
