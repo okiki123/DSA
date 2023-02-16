@@ -15,7 +15,7 @@ def find_averages_of_subarrays(k, arr):
     windowSum, windowStart = 0.0, 0
     for windowEnd in range(len(arr)):
         windowSum += arr[windowEnd] #add the next element
-        #slide the window, we dont need to slide if we have not hit the required window aize of 'k'
+        #slide the window, we dont need to slide if we have not hit the required window size of 'k'
         if windowEnd >= k - 1:
             result.append(windowSum / k) # calculate the average
             windowSum -= arr[windowStart] # subtract the element going out
@@ -23,4 +23,14 @@ def find_averages_of_subarrays(k, arr):
     return result
 
 
+def max_sub_array_of_size_k(k, arr):
+    windowsum, windowstart,  maxsum = 0, 0, 0
+    for windowend in range(len(arr)):
+        windowsum += arr[windowend] #add the next element
+        #slide the window, we dont need to slide if we have not hit the required window size of 'k'
+        if windowend >= k - 1:
+            maxsum = max(maxsum, windowsum)
+            windowsum -= arr[windowstart]
+            windowstart += 1
+        return maxsum
 
