@@ -47,6 +47,9 @@ def smallest_subarray_with_given_sum(s, arr):
         if min_length == math.inf:
             return 0
         return min_length
+
+def longest_substring_with_k_distinct(str, k):
+    window_start
         
 
 
