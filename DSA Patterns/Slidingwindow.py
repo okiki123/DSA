@@ -33,6 +33,7 @@ def max_sub_array_of_size_k(k, arr):
             windowsum -= arr[windowstart]
             windowstart += 1
         return maxsum
+    
 import math
 def smallest_subarray_with_given_sum(s, arr):
     window_sum = 0
@@ -68,7 +69,18 @@ def longest_substring_with_k_distinct(str, k):
         max_length  = max(max_length, window_end  - window_start + 1)
     return max_length
 
-        
+def pair_with_targetsum(arr, target_sum):
+    start_point = 0
+    end_point =  len(arr) - 1
+    while start_point < end_point:
+        arr[start_point] + arr[end_point] == sum
+        if sum < target_sum:
+            start_point +=1
+        if sum > target_sum:
+            end_point -= 1
+        if sum  == target_sum:
+            return  [start_point, end_point]
+    return [-1, -1]
 
 
 
