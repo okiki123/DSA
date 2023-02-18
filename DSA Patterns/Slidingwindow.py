@@ -82,5 +82,25 @@ def pair_with_targetsum(arr, target_sum):
             return  [start_point, end_point]
     return [-1, -1]
 
+def remove_duplicates(arr):
+    next_non_duplicate = 1
+    i = 1
+    while(i < len(arr)):
+        if arr[next_non_duplicate - 1] != arr[i]
+        arr[next_non_duplicate] = arr[i]
+        next_non_duplicate += 1
+    i += 1
+    return next_non_duplicate
+
+def remove_element(arr, key):
+    nextElement = 0
+    for i in range(len(arr)):
+        if arr[i] != key:
+            arr[nextElement] == arr[i]
+            nextElement += 1
+    return nextElement
+
+
+
 
 
