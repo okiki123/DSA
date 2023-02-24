@@ -7,4 +7,4 @@ class solution:
                 currSum = 0
             currSum += n
             maxSub = max(currSum, maxSub)
-        
+        return maxSub
