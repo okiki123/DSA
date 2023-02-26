@@ -7,4 +7,4 @@ class solution:
                 number -= hashmap[s[i]]
             else:
                 number += hashmap[s[i]]
-        return number + hashmap
+        return number + hashmap[s[i]]
