@@ -1,3 +1,2 @@
 class solution:
-    def plusone(self, list[int]) -> int:
-        
+    def plusone(self, digits: list[int]) -> int:
