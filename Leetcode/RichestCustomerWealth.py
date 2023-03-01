@@ -1,5 +1,5 @@
 class solution:
-    def richestcustomer(self, accounts:List[List[int]]) -> int:
+    def richestcustomer(self, accounts:list[list[int]]) -> int:
         maxsum = 0
         for i in range(len(accounts)):
             eachsum = 0
