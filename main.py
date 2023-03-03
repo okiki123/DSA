@@ -325,6 +325,8 @@ class Node:
         self.left = None
         self.right = None
         self.val = key
-
+class BinaryTree:
+    def __init__(self):
+        self.root = None
         
         
