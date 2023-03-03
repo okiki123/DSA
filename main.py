@@ -321,13 +321,35 @@ class LinkedList:
 
 # Binary Tree Data Structure
 class Node:
-    def __init__(self, key):
+    def __init__(self, data):
         self.left = None
         self.right = None
-        self.val = key
-class BinaryTree:
-    def __init__(self):
-        self.root = None
+        self.data = data
+
+    def add_child(self, data):
+        if data == self.data:
+            return
+        if data < self.data:
+            if self.left:
+                self.left.add_child(data)
+            else:
+                self.left = Node(data)
+        else:
+            self.right = Node(data)
+    
+    def in_order_traversal(self):
+        elements = []
+        if self.left:
+            elements += self.left.in_order_traversal()
+        elements.append(self.data)
+
+        if self.right:
+            elements += self.right.in_order_traversal()
+        
+        return elements
+
+
+
     
         
         
