@@ -320,5 +320,11 @@ class LinkedList:
         return False
 
 # Binary Tree Data Structure
+class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.val = key
+
         
         
