@@ -3,4 +3,4 @@ class solution:
         res = 0
         for n in nums:
             res = res ^ n
-       
+        return res
