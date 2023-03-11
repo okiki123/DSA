@@ -361,8 +361,7 @@ class Node:
             else:
                 return False
             
-#Python for DSA
-
+#Python for DSA Dynamically Typed Language
 
 
 
