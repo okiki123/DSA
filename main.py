@@ -362,6 +362,17 @@ class Node:
                 return False
             
 #Python for DSA Dynamically Typed Language
+n = 0
+
+n = "abc"
+
+n, m = 0, 'abc'
+
+n = n + 1
+
+n += 1
+
+# None is null (absence of value)
 
 
 
