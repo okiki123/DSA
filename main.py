@@ -373,6 +373,8 @@ n = n + 1
 n += 1
 
 # None is null (absence of value)
+n = 4
+n = None
 
 
 
