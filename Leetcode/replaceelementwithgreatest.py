@@ -5,3 +5,4 @@ class solution:
             newmax = max(rightmax,arr[i])
             arr[i] = rightmax
             rightmax = newmax
+        return arr
