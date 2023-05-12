@@ -9,7 +9,7 @@ class solution:
         return False
     
     def containsDuplicate2(self, nums:list[int]) -> bool:
-        map = set()
+        hashset = set()
         for n in nums:
             if n in hashset:
                 return True
