@@ -4,5 +4,5 @@ def groupAnagrams(self, strs:list[str]) -> list[list[str]]:
         count = [0] * 26
         for a in c:
             count[ord(a) - ord("a")] += 1
-        res[tuple[count]].append(c)
-    return res.value()
+        res[tuple(count)].append(c)
+    return res.values()
