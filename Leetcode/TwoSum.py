@@ -7,4 +7,5 @@ class solution:
                 return [map[x], i]
             else:
                 hashmap[nums[i]] = i
+        return []
         
