@@ -6,4 +6,6 @@ class solution:
         for i in range(len(nums)):
             sol[i] *= pre
             pre *= nums[i]
-            
+            sol[len(nums) - i - 1] *= post
+            post *= nums[len(nums) - i - 1]
+        return sol
